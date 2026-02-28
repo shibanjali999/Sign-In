@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Confessions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <h2>Confessions</h2>
+    <small id="welcomeText"></small>
+  </div>
+  <button onclick="logout()" class="logout">Logout</button>
+</header>
+
+<div class="container">
+  <div class="postBox">
+    <textarea id="confessionInput" placeholder="What's on your mind?"></textarea>
+
+    <div class="postActions">
+      <label>
+        <input type="checkbox" id="anonymous"> Post anonymously
+      </label>
+
+      <button type="submit">Post</button>
+    </div>
+  </div>
+
+  <div id="confessionList"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
